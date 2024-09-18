@@ -14,8 +14,8 @@ if [ "$STACK" = "heroku-18" ]; then
     WKHTMLTOPDF_URL="https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb"
 elif [ "$STACK" = "heroku-20" ]; then
     WKHTMLTOPDF_URL="https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb"
-elif [ "$STACK" = "heroku-24" ]; then
-    WKHTMLTOPDF_URL="https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.lunar_amd64.deb"
+elif [ "$STACK" = "heroku-22" ] || [ "$STACK" = "heroku-24" ]; then
+    WKHTMLTOPDF_URL="https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb"
 fi
 # Done
 
