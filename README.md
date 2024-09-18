@@ -27,7 +27,7 @@ This buildpack downloads and extracts the [wkhtmltopdf](https://wkhtmltopdf.org/
 
 ### Ownership Update
 
-This repository was originally created and maintained by [Rohan Debroy](https://github.com/RohanDebroy). As the original author is no longer maintaining the project, I have taken over the repository to continue its development and support. In this latest update, I've added support for the `heroku-24` stack to ensure compatibility with the latest Heroku environments.
+This repository was originally created and maintained by [Rohan Debroy](https://github.com/RohanDebroy). As the original author is no longer maintaining the project (This repository has been archived by the owner on Aug 10, 2024. It is now read-only.), I [John Paul Garland w/ Forest of Knowledge Inc.](https://github.com/johnpg82) have taken over the repository to continue its development and support. In this latest update, I've added support for the `heroku-24` stack to ensure compatibility with the latest Heroku environments.
 
 ## Changelog <a name = "changelog"></a>
 - v1.0 (initial release)
