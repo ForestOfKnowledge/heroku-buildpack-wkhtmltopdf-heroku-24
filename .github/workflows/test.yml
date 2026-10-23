@@ -1,0 +1,25 @@
+name: Stack compatibility
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        stack: [24, 26]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile and render in the runtime image
+        run: >-
+          docker run --rm --platform linux/amd64
+          -e STACK=heroku-${{ matrix.stack }}
+          -v "$PWD:/buildpack:ro"
+          heroku/heroku:${{ matrix.stack }}
+          bash /buildpack/tests/smoke.sh
